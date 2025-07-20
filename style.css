@@ -8,8 +8,8 @@ body {
 
 header {
   background-color: #ff6f61;
-  padding: 20px;
-  color: white;
+  padding: 15;
+  color: blue;
   font-size: 24px;
   text-transform: uppercase;
   position: sticky;
