@@ -1,126 +1,26 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Home</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff6f9;
-      opacity: 0;
-      transition: opacity 0.8s ease-in;
-    }.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 150px;
-  height: 100%;
-  background-color: #ffe2ec;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 20px 10px;
-  gap: 15px;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #d6336c;
-  background-color: #fff0f5;
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-weight: bold;
-  animation: blink 1.5s infinite;
-  display: inline-flex;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.sidebar a .arrow {
-  margin-right: 6px;
-  animation: moveArrow 1s infinite alternate;
-}
-
-.sidebar a:hover {
-  background-color: #ffccd9;
-  color: #b1004b;
-}
-
-.content {
-  margin-right: 160px;
-  padding: 20px;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
-}
-
-@keyframes moveArrow {
-  0% { transform: translateX(-4px); }
-  100% { transform: translateX(0); }
-}
-
-@media screen and (max-width: 600px) {
-  .sidebar {
-    width: 100px;
-    padding: 15px 5px;
-  }
-  .content {
-    margin-right: 120px;
-  }
-}
-
-/* Scroll to Top */
-#scrollTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ffccd9;
-  color: #b1004b;
-  border: none;
-  border-radius: 50%;
-  padding: 12px 16px;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-  z-index: 999;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-#scrollTopBtn:hover {
-  background-color: #ffe6ec;
-}
-
-  </style>
+  <title>Priya's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>  <div class="sidebar">
-    <a href="index.html"><span class="arrow">←</span>Home</a>
-    <a href="about.html"><span class="arrow">←</span>About</a>
-    <a href="skills.html"><span class="arrow">←</span>Skills</a>
-    <a href="contact.html"><span class="arrow">←</span>Contact</a>
-  </div>  <div class="content">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Sofiya — a 3rd-year B.Tech IT student passionate about web development!</p>
-  </div><button id="scrollTopBtn" title="Go to top">↑</button>
+<body>
+  <header>
+    Welcome to My Portfolio <span class="blink">✨</span>
+  </header>
+  <h1>Hello! I'm Sofiya 👋</h1>
+  <p>Explore my work and know more about me!</p>
+  <div class="arrow">⬇️</div>
 
-  <script>
-    window.onscroll = function() {
-      document.getElementById("scrollTopBtn").style.display =
-        (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
-    };
-    document.getElementById("scrollTopBtn").onclick = function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-    window.addEventListener("load", () => {
-      document.body.classList.add("fade-in");
-    });
-  </script></body>
+  <nav>
+    <a href="about.html">About</a> |
+    <a href="skills.html">Skills</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
 
-
+  <footer>© 2025 Priya</footer>
+</body>
+</html>
 
 
 
