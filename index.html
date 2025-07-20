@@ -1,37 +1,93 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta< name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | Sofiya Priya</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      animation: blink 2s infinite;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #ffeb3b;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      background-color: #f50057;
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+    .welcome {
+      margin-top: 50px;
+      font-size: 24px;
+      animation: slidein 2s ease;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    @keyframes slidein {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1 class="blink">Hi, I'm Sofiya Priya 👩‍💻</h1>
-    <p class="tagline">3rd Year IT Student | Web Developer | Tech Learner</p>
-    <img src="images/sofiya.jpg" alt="My Photo" class="profile-img"/>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="activities.html">Activities</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <header>✨ Welcome to My Portfolio ✨</header>
 
-  <main>
-    <h2>Welcome to My Portfolio!</h2>
-    <p>Explore to know more about my work, skills, and projects.</p>
-    <div class="arrow">⬇</div>
-  </main>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="welcome">
+    <p>Hello! I'm <strong>[Your Name]</strong>, a passionate web developer and tech enthusiast. <br>
+    Explore my work and journey through this site!</p>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Sofiya Priya</p>
+    © 2025 My Portfolio. All rights reserved.
   </footer>
 
 </body>
